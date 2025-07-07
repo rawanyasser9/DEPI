@@ -152,3 +152,66 @@ LEFT JOIN
     hr.work_on AS W ON E.ssn = W.ssn
 LEFT JOIN
     hr.Project AS p ON W.Pnum = p.PNum
+
+
+
+
+-------------------------------------------------------------------
+
+ALTER TABLE hr.Employee ADD Email NVARCHAR(100);
+
+ALTER TABLE hr.Employee ALTER COLUMN Fname NVARCHAR(255);
+
+ALTER TABLE hr.Employee ADD salary  DECIMAL(10,2) CHECK (Salary >= 3000) DEFAULT 3000 ;
+select * 
+from hr.Employee;
+
+update hr.Employee set salary = 14000.00 where Dnum=100;
+
+select * 
+from hr.Employee;
+
+update hr.Employee set salary = 16000 where Dnum=110;
+
+select * 
+from hr.Employee;
+
+
+INSERT INTO hr.Department (Dname, loc) VALUES
+('IT and Digital Transformation', 'New Cairo'),
+('Sales and Marketing', 'Alexandria'),
+('Customer Relations', 'Mansoura'),
+('Quality Assurance', 'Tanta'),
+('Public Relations', 'Zamalek');
+
+
+select * 
+from hr.Department ;
+
+INSERT INTO hr.Employee (ssn, Fname, Lname, gender, B_D, Dnum, Email, salary, sup_ssn) VALUES
+(102030480, 'Khaled', 'ahmed', 'M', '1982-05-20', 100, 'khaled.masry@company.com', 25000.00, NULL),        -- IT Manager
+(102030481, 'Fatma', 'Ali', 'F', '1995-03-15', 100, 'fatma.ali@company.com', 14000.00, 102030480),
+(102030780, 'Amr', 'mohamed', 'M', '1998-07-22', 100, 'amr.diab@company.com', 13500.00, 102030480),
+(102030804, 'Mona', 'ali', 'F', '1985-11-02', 110, 'mona.zaki@company.com', 28000.00, NULL),                -- Sales Director
+(102030805, 'Ahmed', 'karam', 'M', '1992-09-18', 110, 'ahmed.helmy@company.com', 16000.00, 102030804),
+(102030806, 'Yasmine', 'hany', 'F', '1990-01-30', 120, 'yasmine.a@company.com', 22000.00, 102030804),         
+(102030907, 'Tamer', 'ali', 'M', '1988-09-12', 130, 'tamer.hosny@company.com', 26000.00, NULL),             -- Tourism Manager
+(102037898, 'Sherine', 'ahmed', 'F', '1999-05-18', 130, 'sherine.aw@company.com', 12000.00, 102030804),
+(102037419, 'Karim', 'mahmoud', 'M', '1991-12-01', 150, 'karim.fahmy@company.com', 24000.00, NULL),             -- Finance Manager
+(102030456, 'Donia', 'ali', 'F', '1993-08-14', 160, 'donia.samir@company.com', 19000.00, NULL);             -- Customer Relations Manager
+
+
+select * 
+from hr.Employee;
+
+INSERT INTO hr.manage (ssn, Dnum, hire_date) VALUES
+(102030480, 170, '2019-01-15'), -- Khaled manages IT
+(102030804, 180, '2020-02-20'), -- Mona manages Sales and Marketing
+(102030907, 140, '2018-06-01'), -- Tamer manages Tourism Operations
+(102037419, 120, '2019-11-25'), -- Karim manages Finance
+(102030456, 190, '2022-01-30'); 
+
+select * 
+from hr.manage ;
+
+
