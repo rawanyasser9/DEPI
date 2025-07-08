@@ -14,6 +14,10 @@ where state in('CA','NY');
 select *
 from [sales].[orders]
 where order_date BETWEEN '2023-01-01' AND '2024-01-01';
+--------------or
+select *
+from [sales].[orders]
+where year(order_date)=2023 ;
 
 --Show customers whose emails end with @gmail.com
 select *
@@ -55,6 +59,13 @@ select category_id ,count(*) as numofProducts
 from production.products 
 group by category_id  ;
 
+---------------or
+select c.category_name ,count(*) as numofProducts
+from production.products p
+join  [production].[categories] c on c.category_id=p.category_id
+group by c.category_name;
+
+
 --Count number of customers in each state
 select state,count(*) as numofCustomers
 from [sales].[customers]
@@ -65,15 +76,34 @@ select brand_id ,avg(list_price) as Avg_Price
 from production.products
 group by brand_id ;
 
+--------------or 
+select b.brand_name ,avg(list_price) as Avg_Price
+from production.products p
+join [production].[brands] b on b.brand_id = p.brand_id
+group by  b.brand_name  ;
+
 --Show number of orders per staff
 select staff_id,count(order_id) as numofOrders
 from [sales].[orders] 
 group  by staff_id ;
 
+---------------or 
+select s.first_name+' '+s.last_name ,count(order_id) as numofOrders
+from [sales].[orders] o
+join [sales].[staffs] s on s.staff_id=o.staff_id
+group  by s.first_name,s.last_name,s.staff_id ;
+
 --Find customers who made more than 2 orders
 select customer_id ,count(order_id)as numofOrders
 from [sales].[orders]
 group by customer_id
+having count(order_id) >2;
+
+------------or 
+select (c.first_name+' '+c.last_name) as full_name ,count(o.order_id)as numofOrders
+from [sales].[orders] o
+join [sales].[customers] c on o.customer_id=c.customer_id
+group by c.first_name,c.last_name, c.customer_id
 having count(order_id) >2;
 
 --Products priced between 500 and 1500
