@@ -173,7 +173,7 @@ RETURN
 
 (
 
-    SELECT *
+Â  Â  SELECT *
     FROM [production].[products]
     WHERE list_price between @min and @max
 
@@ -203,7 +203,7 @@ as
 begin
 
  insert into @summary
- select year(order_date) as years,
+Â select year(order_date) as years,
         count(o.order_id) as total_orders,
         sum(quantity*list_price*(1-discount)) as total_spent,
         AVG(quantity*list_price*(1-discount))as avg_value
@@ -437,7 +437,7 @@ begin
 end
 else
 begin
-    print('invalid quarter. use 1–4.');
+    print('invalid quarter. use 1Â–4.');
     return;
 end
 
