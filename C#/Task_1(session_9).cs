@@ -36,15 +36,15 @@ namespace Task_1
                     {
                         case 'A':
                         case 'a':
-                            Console.WriteLine("Summation = " + (num1 + num2));
+                            Console.WriteLine($"{num1} + {num2} = {num1 + num2}");
                             break;
                         case 's':
                         case 'S':
-                            Console.WriteLine("Subtraction = " + (num1 - num2));
+                            Console.WriteLine($"{num1} - {num2} = {num1 - num2}");
                             break;
                         case 'M':
                         case 'm':
-                            Console.WriteLine(" multiplication = " + (num1 * num2));
+                            Console.WriteLine($"{num1} * {num2} = {num1 * num2}");
                             break;
                         default:
                             Console.WriteLine("invalid choice ");
