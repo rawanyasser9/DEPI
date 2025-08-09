@@ -1,0 +1,14 @@
+D:\DEPI\technical\c#\C#\Task_3\bin\Debug\net9.0\Task_3.exe
+D:\DEPI\technical\c#\C#\Task_3\bin\Debug\net9.0\Task_3.deps.json
+D:\DEPI\technical\c#\C#\Task_3\bin\Debug\net9.0\Task_3.runtimeconfig.json
+D:\DEPI\technical\c#\C#\Task_3\bin\Debug\net9.0\Task_3.dll
+D:\DEPI\technical\c#\C#\Task_3\bin\Debug\net9.0\Task_3.pdb
+D:\DEPI\technical\c#\C#\Task_3\obj\Debug\net9.0\Task_3.GeneratedMSBuildEditorConfig.editorconfig
+D:\DEPI\technical\c#\C#\Task_3\obj\Debug\net9.0\Task_3.AssemblyInfoInputs.cache
+D:\DEPI\technical\c#\C#\Task_3\obj\Debug\net9.0\Task_3.AssemblyInfo.cs
+D:\DEPI\technical\c#\C#\Task_3\obj\Debug\net9.0\Task_3.csproj.CoreCompileInputs.cache
+D:\DEPI\technical\c#\C#\Task_3\obj\Debug\net9.0\Task_3.dll
+D:\DEPI\technical\c#\C#\Task_3\obj\Debug\net9.0\refint\Task_3.dll
+D:\DEPI\technical\c#\C#\Task_3\obj\Debug\net9.0\Task_3.pdb
+D:\DEPI\technical\c#\C#\Task_3\obj\Debug\net9.0\Task_3.genruntimeconfig.cache
+D:\DEPI\technical\c#\C#\Task_3\obj\Debug\net9.0\ref\Task_3.dll
