@@ -1,0 +1,14 @@
+D:\DEPI\technical\c#\C#\BankTask\BankTask\obj\Debug\net9.0\BankTask.GeneratedMSBuildEditorConfig.editorconfig
+D:\DEPI\technical\c#\C#\BankTask\BankTask\obj\Debug\net9.0\BankTask.AssemblyInfoInputs.cache
+D:\DEPI\technical\c#\C#\BankTask\BankTask\obj\Debug\net9.0\BankTask.AssemblyInfo.cs
+D:\DEPI\technical\c#\C#\BankTask\BankTask\obj\Debug\net9.0\BankTask.csproj.CoreCompileInputs.cache
+D:\DEPI\technical\c#\C#\BankTask\BankTask\bin\Debug\net9.0\BankTask.exe
+D:\DEPI\technical\c#\C#\BankTask\BankTask\bin\Debug\net9.0\BankTask.deps.json
+D:\DEPI\technical\c#\C#\BankTask\BankTask\bin\Debug\net9.0\BankTask.runtimeconfig.json
+D:\DEPI\technical\c#\C#\BankTask\BankTask\bin\Debug\net9.0\BankTask.dll
+D:\DEPI\technical\c#\C#\BankTask\BankTask\bin\Debug\net9.0\BankTask.pdb
+D:\DEPI\technical\c#\C#\BankTask\BankTask\obj\Debug\net9.0\BankTask.dll
+D:\DEPI\technical\c#\C#\BankTask\BankTask\obj\Debug\net9.0\refint\BankTask.dll
+D:\DEPI\technical\c#\C#\BankTask\BankTask\obj\Debug\net9.0\BankTask.pdb
+D:\DEPI\technical\c#\C#\BankTask\BankTask\obj\Debug\net9.0\BankTask.genruntimeconfig.cache
+D:\DEPI\technical\c#\C#\BankTask\BankTask\obj\Debug\net9.0\ref\BankTask.dll
