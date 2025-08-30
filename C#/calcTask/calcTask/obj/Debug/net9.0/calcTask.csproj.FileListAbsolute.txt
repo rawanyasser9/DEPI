@@ -1,0 +1,14 @@
+D:\DEPI\technical\c#\C#\calcTask\calcTask\bin\Debug\net9.0\calcTask.exe
+D:\DEPI\technical\c#\C#\calcTask\calcTask\bin\Debug\net9.0\calcTask.deps.json
+D:\DEPI\technical\c#\C#\calcTask\calcTask\bin\Debug\net9.0\calcTask.runtimeconfig.json
+D:\DEPI\technical\c#\C#\calcTask\calcTask\bin\Debug\net9.0\calcTask.dll
+D:\DEPI\technical\c#\C#\calcTask\calcTask\bin\Debug\net9.0\calcTask.pdb
+D:\DEPI\technical\c#\C#\calcTask\calcTask\obj\Debug\net9.0\calcTask.GeneratedMSBuildEditorConfig.editorconfig
+D:\DEPI\technical\c#\C#\calcTask\calcTask\obj\Debug\net9.0\calcTask.AssemblyInfoInputs.cache
+D:\DEPI\technical\c#\C#\calcTask\calcTask\obj\Debug\net9.0\calcTask.AssemblyInfo.cs
+D:\DEPI\technical\c#\C#\calcTask\calcTask\obj\Debug\net9.0\calcTask.csproj.CoreCompileInputs.cache
+D:\DEPI\technical\c#\C#\calcTask\calcTask\obj\Debug\net9.0\calcTask.dll
+D:\DEPI\technical\c#\C#\calcTask\calcTask\obj\Debug\net9.0\refint\calcTask.dll
+D:\DEPI\technical\c#\C#\calcTask\calcTask\obj\Debug\net9.0\calcTask.pdb
+D:\DEPI\technical\c#\C#\calcTask\calcTask\obj\Debug\net9.0\calcTask.genruntimeconfig.cache
+D:\DEPI\technical\c#\C#\calcTask\calcTask\obj\Debug\net9.0\ref\calcTask.dll
