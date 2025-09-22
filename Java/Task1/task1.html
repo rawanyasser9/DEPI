@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 1</title>
+    <style>
+      #outputBox {
+        border: 2px solid black;
+        width: 500px;
+        height: 500px;
+        padding: 10px;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      #plus, #minus, #click, #imgplus {
+        padding: 10px;
+        background-color: lightcoral;
+        margin: 5px;
+      }
+      #inputBox {
+        padding: 10px;
+        margin: 10px;
+        border: 2px solid black;
+      }
+      #imgBox {
+        width: 400px;
+        height: 400px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #imgBox img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+    </style>
+</head>
+<body>
+    <input type="text" id="name" placeholder="Enter text ">
+    <input type="text" id="img" placeholder="Enter img name ">
+    <select id="fonts">
+      <option value="Arial">Arial</option>
+      <option value="Verdana">Verdana</option>
+      <option value="Times New Roman">Times New Roman</option>
+      <option value="Courier New">Courier New</option>
+    </select>
+    <button id="plus">+</button>
+    <button id="minus">-</button>
+    <button id="click">click</button>
+    <button id="imgplus">++img</button>
+
+    <div id="outputBox">
+      <p id="welcome"></p>
+      <div id="imgBox"></div>
+    </div>  
+    <script src="task1.js"></script>
+</body>
+</html>
