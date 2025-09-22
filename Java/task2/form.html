@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Validation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 20px auto;
+            direction: ltr;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, select {
+            padding: 5px;
+            width: 100%;
+            max-width: 300px;
+            box-sizing: border-box;
+        }
+        input[type="file"] {
+            max-width: 100%;
+        }
+        .msg-error {
+            font-size: 12px;
+            margin-top: 5px;
+            display: block;
+        }
+  
+    </style>
+</head>
+<body>
+    <form  method="get"  id="form">
+        <div >
+            <label for="name">name</label>
+            <input type="text" id="name" name="name" >
+            <div class="msg-error" id="name-error"></div>
+        </div>
+        <div >
+            <label for="email">email</label>
+            <input type="text" id="email" name="email">
+            <div class="msg-error" id="email-error"></div>
+        </div>
+        <div >
+            <label for="password">password</label>
+            <input type="password" id="password" name="password">
+            <div class="msg-error" id="password-error"></div>
+        </div>
+        <div >
+            <label for="confirm-password">confirm</label>
+            <input type="password" id="confirm-password" name="confirm-password">
+            <div class="msg-error" id="confirm-password-error"></div>
+        </div>
+        <div >
+            <label for="phone">phone</label>
+            <input type="text" id="phone" name="phone">
+            <div class="msg-error" id="phone-error"></div>
+        </div>
+        <div>
+            <label for="image">Upload Image (optional):</label>
+            <input type="file" id="image" name="image" accept="image/*">
+            <div class="msg-error" id="image-error"></div>
+        </div>
+        <div >
+            <input type="submit" value="Send">
+        </div>
+    </form>
+    <script src="validation.js"></script>
+</body>
+</html>
