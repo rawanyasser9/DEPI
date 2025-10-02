@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    table {
+      width: 80%;
+      margin: auto;
+      border-collapse: collapse;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    thead {
+      background: #3498db;
+      color: white;
+    }
+
+    th, td {
+      padding: 12px 15px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      font-size: 16px;
+    }
+
+    td {
+      font-size: 14px;
+    }
+    #btn{
+       display: inline-block;
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+ .add {
+      display: inline-block;
+      background: #3498db;
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }  
+   .edit {
+
+      background: #27ae60;
+    }
+
+    .delete {
+        display: inline-block;
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      background: #e74c3c;
+    }  
+     .details {
+      background: #1e195b;
+    }
+
+    </style>
+</head>
+<body>
+    <a href="create.html" class="add"id="btn">Add</a>
+    <table id="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Image</th>
+                <th>FirstName</th>
+                <th>LastName </th>
+                <th>City </th>
+                <th>Action </th>
+            </tr>
+        </thead>
+    </table>
+    <script src="updateapi.js"></script>
+</body>
+</html>
