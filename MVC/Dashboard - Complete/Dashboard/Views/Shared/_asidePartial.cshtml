@@ -1,0 +1,38 @@
+﻿<div class="text-center mb-4">
+    <img src="#" class="rounded-circle mb-2" alt="User">
+    <h6 class="fw-bold">John Doe</h6>
+    <p class="text-muted small">Admin</p>
+</div>
+
+@* slidebar elements *@
+<ul class="nav flex-column">
+    <li class="nav-item"><a href="#" class="nav-link active"><i class="mdi mdi-view-dashboard me-2"></i> Dashboard</a></li>
+
+
+    <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-toggle="collapse" href="#studentsMenu" role="button">
+            <i class="mdi mdi-format-list-bulleted"></i>
+            Students
+        </a>
+        <div class="collapse" id="studentsMenu">
+            <ul class="nav flex-column ms-3">
+                <li class="nav-item"><a class="nav-link" href="/Admin/Student">List Students</a></li>
+                <li class="nav-item"><a class="nav-link" href="/Admin/Student/Add">Add Student</a></li>
+            </ul>
+        </div>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-toggle="collapse" href="#departmentsMenu" role="button">
+            <i class="mdi mdi-format-list-bulleted"></i>
+            Departments
+        </a>
+        <div class="collapse" id="departmentsMenu">
+            <ul class="nav flex-column ms-3">
+                <li class="nav-item"><a class="nav-link" href="/Admin/Department">List Departments</a></li>
+                <li class="nav-item"><a class="nav-link" href="/Admin/Department/Add">Add Department</a></li>
+            </ul>
+        </div>
+    </li>
+
+</ul>
