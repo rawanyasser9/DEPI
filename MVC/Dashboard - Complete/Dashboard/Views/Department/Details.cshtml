@@ -1,0 +1,26 @@
+﻿@model Department
+@{
+	Layout = "_MyLayout";
+}
+
+<div class="container mt-5">
+    <div class="card shadow-lg">
+        <div class="card-header bg-primary text-white">
+            <h4 class="mb-0">Department Details</h4>
+        </div>
+        <div class="card-body">
+            <dl class="row">
+                <dt class="col-sm-3">Phone</dt>
+                <dd class="col-sm-9">@Model.Id</dd>
+
+                <dt class="col-sm-3">Full Name</dt>
+                <dd class="col-sm-9">@Model.Name</dd>
+
+                <dt class="col-sm-3">Email</dt>
+                <dd class="col-sm-9">@Model.Description</dd>
+            </dl>
+
+            <a href="/Admin/Department" class="btn btn-secondary mt-3">Back to List</a>
+        </div>
+    </div>
+</div>

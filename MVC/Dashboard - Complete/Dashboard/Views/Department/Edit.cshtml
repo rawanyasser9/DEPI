@@ -1,0 +1,33 @@
+﻿@model Department
+@{
+    Layout = "_MyLayout";
+}
+
+<div class="container mt-5">
+    <div class="card shadow-lg">
+        <div class="card-header bg-primary text-white">
+            <h4 class="mb-0">Edit Department</h4>
+        </div>
+        <div class="card-body">
+            <form method="post" action="/Admin/Department/Edit/@Model.Id">
+                <input type="hidden" name="Id" value="@Model.Id" />
+
+                <div class="mb-3">
+                    <label for="DepartmentName" class="form-label">Department Name</label>
+                    <input type="text" class="form-control" id="DepartmentName" name="Name" value="@Model.Name" placeholder="Enter student full name" required />
+                </div>
+
+                <div class="mb-3">
+                    <label for="description" class="form-label">Description</label>
+                    <input type="text" class="form-control" id="description" name="Description" value="@Model.Description" placeholder="Enter student phone" />
+                </div>
+
+
+                <div class="d-flex justify-content-between">
+                    <a href="/Admin/Department" class="btn btn-secondary">Cancel</a>
+                    <button type="submit" class="btn btn-success">Save Changes</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
